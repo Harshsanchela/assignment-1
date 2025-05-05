@@ -1,0 +1,27 @@
+1) What is HTML? Explain its structure...?
+  -  HyperText Markup Language,
+  -  the foundational language for web pages.
+     It uses elements, tags, and attributes to structure content,
+     defining how text, images, links, and other elements are displayed in a web browser. 
+     The basic structure includes a DOCTYPE declaration, 
+     an <html> root element containing a <head>
+     for metadata and a <body> for the visible content.
+
+
+2) Describe the purpose of HTML tags and provide examples of commonly used tags..?
+  - HTML tags are the foundation of web page structure, telling browsers how to display content. 
+    They act as instructions,defining elements like headings,paragraphs, images, and links. 
+    Commonly used tags include <html> (root element), <head> (document metadata), <body> (visible content), 
+    <h1>-<h6> (headings), <p> (paragraph), <a> (link),<img> (image), and <ul>/<li>/<a> (lists).
+
+3) What are the differences between block-level and inline elements? Give examples of each...?
+  - Block-level elements always start on a new line and take up the full available width, 
+    while inline elements flow within a line and only take up as much space as their content requires. 
+    Examples of block elements include <p> (paragraph), <div> (division), 
+    and <h1> (heading), whereas examples of inline elements include <span>,
+    <a> (link), and <img> (image). 
+
+4) Explain the concept of semantic HTML and why it is important...?
+  - Semantic HTML refers to using HTML elements that accurately describe the meaning and structure of web page content, 
+    rather than just defining its presentation. This approach makes web pages more accessible,
+    understandable for both humans and machines (like search engines and screen readers), and more maintainable. 

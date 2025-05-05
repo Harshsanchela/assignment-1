@@ -1,0 +1,109 @@
+1) Create multiple tables and perform queries using
+
+ - create table -> tbl_employee
+
+create table category ( 
+		catid int Auto_increment primary key ,
+		catname varchar(100)
+		);
+
+ - create table products 
+
+create table products ( 
+		pid int Auto_increment primary key ,
+    		catid int (10),
+		pname varchar(100),
+		pprices bgint
+		);
+
+--------   SELECT ------------
+
+  1) select * from category;
+  2) select * from products;
+
+
+--------   UPDATE -------------
+ 
+  1) update category set catname='shoes' where catid=4;
+  2) update products set pname='puma' where pid=4;
+
+--------   DELETE -------------- 
+
+  1) delete from category where catid=1;
+  2) delete from products where pid=1;
+
+--------  INSERT ----------------
+
+  1) insert into category (catname) values ('shoes');
+  2) insert into employee (name,catid) values ('puma','2');
+
+--------  WHERE -------------------
+
+  1) select * from products where pid = 3;
+  2) delete from category where name='shoes';
+  3) update category set catname='shoes mane'where catid=4;
+
+--------- LIKE ----------------------
+
+  1) select * from category where name like 's%';
+  2) select * from products  where name like '%p%';
+
+--------  GROUP BY -----------------
+
+  1) select sum(prices) as sumof_prices from users group by products;
+  2) select sum(catid) as total_category from users group by category;
+
+-------  HAVING ---------------------
+
+	1) SELECT COUNT(catid), category FROM products GROUP BY category HAVING COUNT(catid) > 5;
+
+	2) SELECT COUNT(pid), products FROM category GROUP BY products HAVING COUNT(pid) > 5;
+
+-------  LIMIT  -------------------- 
+
+	1) SELECT * FROM category LIMIT 3;
+
+	2) SELECT * FROM products LIMIT 5;
+
+-------  OFFSET ----------------------
+
+	1) SELECT * FROM product LIMIT 5 OFFSET 5;
+	
+	2) SELECT * FROM category LIMIT 6 OFFSET 6;
+ 
+-------  Subqueries  ------------------
+
+	1) SELECT MAX(price) AS second_highest_price FROM products WHERE price < (SELECT MAX(price) FROM products);
+
+	2) SELECT catid , catname (SELECT pname FROM products WHERE products.pid = category.pid) AS products FROM category;
+
+-------- AND ------------------------
+
+	1) select * from category where catid between 5 and 8;
+	2) select * from products where pid between 3 and 7;
+
+
+
+--------  OR ------------------------
+
+	1) SELECT * FROM category WHERE Catname = 'shoes' OR Catname = 'electronics';
+	
+	2) SELECT * FROM products WHERE pid = '%1' OR pname = '%p%';
+
+
+-------- NOT -----------------------
+
+	1) SELECT catname FROM category WHERE catname NOT LIKE 'e%';
+	2) SELECT pname FROM products WHERE pname NOT LIKE '%p%'; 
+
+------------  IN  -----------------
+
+
+	1) SELECT * FROM category WHERE catname IN ('shoes', ' electronics');
+
+	2) SELECT * FROM products WHERE pname IN ('puma', 'skechers', 'campus');
+
+
+
+
+     

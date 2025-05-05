@@ -1,0 +1,72 @@
+1) What is CSS? How does it differ from HTML?
+  - CSS (Cascading Style Sheets) is a stylesheet language used to control the presentation of a web page, 
+    including aspects like layout, colors, fonts, and spacing. It allows developers to separate the structure
+    and content of a webpage (defined by HTML) from its visual appearance, making it easier to maintain and update the design.​
+
+  - Difference between HTML and CSS 
+    Purpose: HTML is used to structure content on the web, while CSS is used to style and layout that content.
+    Syntax: HTML uses tags to define elements, while CSS uses selectors and rules to style those elements.
+    Functionality: HTML provides the basic structure and content of a web page, while CSS enhances its visual appearance.
+    Separation of Concerns: HTML and CSS are separate languages that work together to build a web page, allowing for greater flexibility and easier maintenance.
+    Browser Support: Both HTML and CSS are supported by all modern browsers, ensuring that web pages will display consistently across devices.
+    Versions: HTML has gone through several versions, with the latest being HTML5, while CSS has three levels of specification: CSS1, CSS2, and CSS3.
+    Dynamic content: While HTML is used to create static web pages, CSS can be used to create dynamic and interactive effects, such as hover effects and animations.
+    Interactivity: HTML is used to create the structure and content of a web page, while CSS and JavaScript are used to add interactivity and dynamic behavior.
+
+2) Explain the three ways to apply CSS to a web page..?
+  - CSS may be added to HTML in three different ways. To style a single HTML element on the page, 
+    use Inline CSS in a style attribute. By adding CSS to the head section of our HTML document, 
+    we can embed an internal stylesheet. We can also connect to an external stylesheet that 
+    separates our CSS from our HTML.
+  
+  - <p style="color: blue; font-size: 16px;">
+    This paragraph is styled inline.</p>
+  
+  -     <head>
+        <style>
+            body { background-color: lightblue; }
+            h1 { color: navy; }
+        </style>
+    </head>
+    ``` [9].
+*   **Usage:** Suitable for styling a single HTML page with a unique style, 
+    or for applying styles to multiple elements within that specific page [1, 2].
+
+**3. External CSS:**
+
+*   **Definition:** External CSS involves creating a separate `.css` file that contains
+   all style rules and linking it to the HTML document using a `<link>` tag within the `<head>` section [1, 2].
+*   **Example:**
+    ```html
+    <head>
+        <link rel="stylesheet" href="mystyle.css">
+    </head>
+
+
+3) What are CSS selectors? List and describe the different types of selectors.?
+  - CSS selectors are used to target HTML elements on your pages, allowing you to apply 
+    styles based on their ID, class, type attributes, and more. 
+    There are mainly 5 types of selectors.
+  - Basic CSS Selectors: These are used to target elements by tag, 
+    .class, or #id for fundamental styling needs.
+  - Combinators: Ideal for styling elements based on their DOM relationships 
+    (e.g., parent-child or sibling relationships).
+  - Group Selectors: Use to apply the same styles to multiple, 
+    unrelated elements simultaneously.
+  - Attribute Selectors: Perfect for styling elements based on specific attributes 
+    or values, such as form inputs or links with certain prefixes or states.
+  - Pseudo-Classes: Best for styling elements dynamically or interactively, 
+    like :hover for user interaction or :nth-child() for structural styling.
+
+
+4) What is the box model in CSS? Explain its components..?
+  - The CSS box model treats every HTML element as a rectangular box, which can be manipulated and positioned using CSS properties.
+    The box model has four main components: content, padding, border, and margin. 
+    These components work together to define the size and layout of an element on a webpage.
+
+  - Content: The area where text or other content is displayed.
+    Padding: Space between the content and the element’s border.
+    Border: A frame that wraps around the padding and content.
+    Margin: Space between the element’s border and neighbouring elements.
+
+  
